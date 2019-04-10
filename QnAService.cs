@@ -9,16 +9,16 @@ namespace QnA
 {
     public class QnAService
     {
-        string host = "https://qnauwp.azurewebsites.net/qnamaker";
+        string host = "https://YOUR-RESOURCE-NAME.azurewebsites.net/qnamaker";
 
         // Authorization endpoint key
         // From Publish Page
-        string endpoint_key = "01dec3dc-b679-4c9c-9dd6-2598f1c9d37a";
+        string endpoint_key = "YOUR-ENDPOINT-KEY";
 
         // Management APIs postpend the version to the route
         // From Publish Page, value after POST
         // Example: /knowledgebases/ZZZ15f8c-d01b-4698-a2de-85b0dbf3358c/generateAnswer
-        string route = "/knowledgebases/87250638-07ab-4687-b276-ac8e4b5d0a63/generateAnswer";
+        string route = "/knowledgebases/YOUR-KNOWLEDGE-BASE-ID/generateAnswer";
 
         // JSON format for passing question to service
         public string AswerQuestion(string question)
